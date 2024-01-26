@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: 'ZonaPro';
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'ZonaPro-Black';
+  src: url('./assests//fonts/ZonaPro-Black.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ZonaThin';
+  src: url('./assests//fonts/ZonaPro-Thin.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ZonaPro-Bold';
+  src: url('./assests//fonts/ZonaPro-Bold.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ZonaPro';
+  src: url('./assests//fonts/ZonaPro.otf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ZonaPro-Regular';
+  src: url('./assests//fonts/ZonaPro-Regular.ttf');
+}

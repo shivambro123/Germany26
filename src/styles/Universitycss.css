@@ -1,0 +1,59 @@
+.universitytitle{
+     width: 20%; /* Set width to 50% */
+  height: 50px; /* Adjust the height as needed */
+  margin-bottom: 3rem; /* Center the element horizontally */
+  border-bottom: 5px solid #ea7d06;
+  box-sizing: border-box; 
+}
+
+.marquee-container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    
+}
+.left-marquee{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 90px;
+    /* animation: leftAnimation 10s linear infinite; */
+}
+.right-marquee{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 90px;
+}
+.left-marquee .university_logos{
+    width: 20%;
+    aspect-ratio: 7/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+.right-marquee .university_logos{
+       width: 20%;
+    aspect-ratio: 16/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+
+@keyframes leftAnimation{
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+      .universitytitle{
+    width: 100%;
+    height: max-content;
+    font-size: 24px;
+  }
+}

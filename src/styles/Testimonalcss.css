@@ -1,0 +1,101 @@
+.testimonal {
+  /* background-image: url("./../assests/testimonal/checkgroup.png"); */
+  /* height: 50vh; Adjust the min-height value as needed */
+  background-image: linear-gradient(to right, #fff4eb, #ffdfd8);
+  width: 100%;
+  max-width: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: 2px 0 2px #e6e5e5;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 10px;
+  z-index: 30 !important;
+  display: flex;
+  flex-direction: column;
+}
+.studentspeak {
+  font-family: "ZonaPro-Regular";
+  width: 35%; /* Set width to 50% */
+  height: 50px; /* Adjust the height as needed */
+  margin-bottom: 3rem; /* Center the element horizontally */
+  border-bottom: 5px solid #ea7d06;
+  box-sizing: border-box;
+}
+.testi-feedback {
+  font-size: 15px;
+  line-height: 1rem;
+}
+.view {
+  /* height: 0px  ; */
+  background-image: linear-gradient(to right, #ea7d06, #d63815);
+  color: #ffffff;
+  background-size: contain;
+  width: 100%;
+  /* background-image: linear-gradient(to right, rgba(232, 161, 30, 0.912) , orange); */
+  border-radius: 0px 0 10px 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.firstvector {
+  background-image: url("../assests/testimonal/Vector1.svg");
+  background-repeat: no-repeat;
+  height: 5vh;
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+}
+.secondvector {
+  background-image: url("../assests/testimonal/Vector2.svg");
+  background-repeat: no-repeat;
+  height: 5vh;
+  width: 50%;
+  position: absolute;
+  bottom: 84px;
+  right: 40px;
+}
+.namebtn {
+  background-image: linear-gradient(to right, #ea7d06, #d63815);
+  /* background-image: url('./../assests/testimonal/namebackground.svg'); */
+  /* background-color: #DE3714; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 100 !important;
+  z-index: 50 !important; 
+}
+.overlayImage{
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  z-index: 1 !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* .testimonal{
+        height: 40vh;
+    } */
+  .studentspeak {
+    width: 100%;
+    height: max-content;
+    font-size: 24px;
+  }
+  .overlayImage{
+    position: absolute;
+    bottom: 0;
+  }
+  .testimonal{
+    max-width: 100%;
+  }
+  .testi-feedback {
+  font-size: 14px;
+  line-height: 1rem;
+}
+}

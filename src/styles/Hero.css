@@ -1,0 +1,98 @@
+.herowrapper {
+  background-image: url("./../assests/NewHero.jpeg");
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero_content {
+  text-align: left;
+  font-family: "ZonaPro-Bold";
+  font-size: 40px;
+}
+
+.hero_content .dreams {
+  text-shadow: 1px 1px 1px #000000e7;
+  font-size: 40px;
+}
+
+.dreams .dream-f {
+  font-family: "ZonaPro-Regular";
+  font-weight: bolder;
+}
+
+.hero_content .studycontent {
+  font-size: 40px;
+  background: linear-gradient(to right, #ea7d06, #d63815);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.callbtn {
+  /* background-image: linear-gradient(to right, #ea7c06c1, #f1810a);
+     */
+  background-image: linear-gradient(to right, #ea7d06, #d63815);
+  color: #ffffff;
+  font-size: 24px;
+  padding: 6px 18px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 100 !important;
+  font-family: "ZonaPro-Regular";
+}
+
+.guranteewrapper {
+  font-size: 22px;
+}
+.our-student {
+  font-family: "ZonaPro-Regular";
+}
+
+.percent {
+  background: -webkit-linear-gradient(#ea7d06, #f1810a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.brandlogos img {
+  width: 8%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .herowrapper {
+    height: max-content;
+    background-size: cover;
+  }
+  .hero_content {
+  }
+  .hero_content .dreams {
+    font-size: 1.7rem;
+    /* letter-spacing: 1px; */
+  }
+  .hero_content .studycontent {
+    font-size: 1.66rem;
+    margin: auto;
+  }
+  .callbtn {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin: auto;
+  }
+
+  .guranteewrapper {
+    font-size: 16px;
+  }
+  .percent {
+    margin: 0;
+    padding: 0;
+  }
+  .brandlogos img {
+    width: 20%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-burn !important;
+    margin: auto;
+  }
+}
