@@ -42,11 +42,11 @@ function NavbarComp() {
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary navbarwrapper sticky top-0 w-100 z-50"
+      className="bg-body-tertiary navbarwrapper sticky top-0 w-100 z-30"
     >
       <Container className="wrapper_inner">
         <div className="w-full flex justify-between">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" style={{ padding: "0" }}>
             <img src={logo} alt="logo" className="logo" />
           </Navbar.Brand>
           <CallIcon phoneNumber="+91 8451895512" />
@@ -59,7 +59,7 @@ function NavbarComp() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
-              className="mx-4 font-bold text-black text-base w-max"
+              className="mx-4 font-bold text-neutral-950 text-base w-max hover:text-orange-500"
               data-to-scrollspy-id="first"
               href="#first"
               // onClick={() => handleNavbarItemClick('section1')}
@@ -67,7 +67,7 @@ function NavbarComp() {
               Home
             </Nav.Link>
             <Nav.Link
-              className="mx-4 font-bold text-black text-base w-max"
+              className="mx-4 font-bold text-neutral-950 text-base w-max hover:text-orange-500"
               data-to-scrollspy-id="second"
               href="#second"
               // onClick={() => handleNavbarItemClick('section2')}
@@ -75,7 +75,7 @@ function NavbarComp() {
               About Us
             </Nav.Link>
             <Nav.Link
-              className="mx-4 font-bold text-black text-base w-max"
+              className="mx-4 font-bold text-neutral-950 text-base w-max hover:text-orange-500"
               data-to-scrollspy-id="third"
               href="#third"
               // onClick={() => handleNavbarItemClick('section3')}
@@ -83,13 +83,13 @@ function NavbarComp() {
               Services
             </Nav.Link>
             <Nav.Link
-              className="mx-4 font-bold text-black text-base w-max"
+              className="mx-4 font-bold text-neutral-950 text-base w-max hover:text-orange-500"
               href="#link"
             >
               Reviews
             </Nav.Link>
             <Nav.Link
-              className="mx-4 font-bold text-black text-base w-max"
+              className="mx-4 font-bold text-neutral-950 text-base w-max hover:text-orange-500"
               href="#link"
             >
               Contact Us

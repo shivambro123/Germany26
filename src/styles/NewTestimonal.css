@@ -1,0 +1,73 @@
+.studentspeak {
+   background:  linear-gradient(to right, #E56D09, #D63715);
+    -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+           font-size: 1.7rem;
+    font-family: "Zona";
+    background-clip: text;
+    color: transparent;
+}
+
+.new_testimonal {
+  /* min-height: 340px; */
+  width: 88%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #fff4eb, #ffdfd8);
+  box-shadow: 4px -2px 1px #e6e5e5;
+}
+.slider-container {
+  height: 400px; /* Set your desired fixed height here */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.testi_image {
+  bottom: 0;
+  right: 0px;
+  min-height: 100px;
+}
+
+.image_inner {
+  height: 11.5rem;
+  width: 12.5rem;
+}
+
+.student_name {
+  width: 15rem;
+}
+
+.view {
+  background-image: linear-gradient(to right, #ea7d06, #d63815);
+  color: #ffffff;
+  background-size: contain;
+  width: 100%;
+  border-radius: 0px 0 10px 10px;
+  padding: 12px 20px;
+  padding-right: -30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.universityImages {
+  height: 50px !important;
+  width: 200px !important;
+}
+
+.storytitle {
+  font-family: "ZonaPro-Regular", sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .studentspeak {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+  .new_testimonal {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+  .image_inner {
+    height: 10rem;
+    width: 10rem;
+  }
+  .student_name {
+    width: 13rem;
+  }
+}

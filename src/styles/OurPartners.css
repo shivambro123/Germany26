@@ -1,0 +1,34 @@
+.partnerWrapper {
+  background-image: url("../assests/partner/background.png");
+  width: 100%;
+  background-size: cover;
+  padding: 2rem 10rem;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.partnerlogo {
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align items to the start (left) */
+  gap: 10px; /* Add some spacing between images */
+}
+
+.partnerlogo img {
+  width: 20%; /* Adjust width as needed */
+  aspect-ratio: 7/2;
+  object-fit: contain;
+}
+.partnerlogo img:first-child {
+    width: 150px; 
+
+}
+
+
+.custom-width {
+  @apply w-2/5;
+  @apply leading-6;
+}
+
+.custom-padding {
+  @apply py-8;
+}

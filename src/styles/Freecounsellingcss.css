@@ -9,12 +9,13 @@
   padding: 0 1.5rem;
 }
 
-.studentspeak1{
-  width: 42%; /* Set width to 50% */
-  height: 50px; /* Adjust the height as needed */
-  margin-bottom: 3rem; /* Center the element horizontally */
-  border-bottom: 5px solid #ea7d06;
-  box-sizing: border-box; 
+.studentspeak1 {
+  background: linear-gradient(to right, #e56d09, #d63715);
+  -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+  font-size: 1.7rem;
+  font-family: "Zona";
+  background-clip: text;
+  color: transparent;
 }
 .free_wrapper {
   flex-wrap: wrap;
@@ -34,26 +35,35 @@
   /* height: 20rem; */
 }
 
-.imagewrapper img {
-  height: max-content;
-}
+
 .university_content {
+  display: flex;
+  justify-content: space-between;
   width: 50%;
+}
+.right-content {
+  text-align: right;
 }
 .university_content h3 {
   font-family: "ZonaPro-Bold";
-  /* font-size: 36px; */
+  font-size: 1.4rem;
+  background: linear-gradient(to right, #e56d09, #d63715);
+  -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+  font-weight: 900;
+  background-clip: text;
+  color: transparent;
 }
 .university_content .applicartion_title {
   font-family: "ZonaPro-Regular";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 30px;
   font-family: 300 !important;
 }
 
 .university_content .lorem {
   font-family: "ZonaPro-Regular";
-  font-size: 1rem;
+  font-size: 0.93rem;
+  max-width: 90%;
   line-height: 1.3rem;
   color: #000000d0;
 }
@@ -65,6 +75,7 @@
   color: #ea7d06;
   border: 4px solid #ea7d06;
   border-radius: 10px;
+  font-size: 0.8rem;
 }
 .free_wrapper:hover .explore_btn {
   background-image: linear-gradient(to right, #ea7d06, #d63815);
@@ -93,7 +104,7 @@
   padding-right: 5rem;
   object-fit: contain;
 }
- .statement {
+.statement {
   height: 50vh;
   width: 100%;
   /* padding-right: 5rem; */
@@ -103,7 +114,6 @@
 .divider_line {
   position: absolute;
   width: 5px;
-  height: 3060px;
   /* border: 2px solid; */
   background-color: #ea7d06;
   top: 0;
@@ -158,7 +168,9 @@
   .university_content {
     width: 100%;
   }
-
+  .right-content {
+    text-align: left;
+  }
   .divider_line {
     height: 2500px;
     left: 3%;
@@ -195,7 +207,7 @@
     left: 30.7%;
     margin-bottom: 3rem;
   }
-  .university_content .applicartion_title{
+  .university_content .applicartion_title {
     font-size: 1rem;
     line-height: 25px;
   }
@@ -239,21 +251,20 @@
   }
 }
 
-
-@media screen and (min-width:320px) and (max-width:480px){
-  .studentspeak1{
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .studentspeak1 {
     width: 100%;
     height: max-content;
     font-size: 24px;
   }
-  .divider_line{
-    height: 308.75rem;
+  .divider_line {
+    height: 299rem;
   }
-  .inner_progress{
+  .inner_progress {
     left: -16%;
   }
-  .inner_progress1{
-    left: -13.8%;
+  .inner_progress1 {
+    left: -14.5%;
     height: 45px;
     width: 42%;
   }
@@ -261,11 +272,11 @@
     position: absolute;
     width: 39%;
     height: 40px;
-    top: 200px;
+    top: 10px;
     left: -15%;
     margin-top: 20rem;
   }
-  .progress1 .inner_progress_visibleBottom{
+  .progress1 .inner_progress_visibleBottom {
     position: absolute;
     left: -17%;
     height: 45px;
@@ -273,7 +284,7 @@
     bottom: 4rem;
   }
 
-  .reverseClass{
+  .reverseClass {
     flex-direction: column-reverse;
   }
 }

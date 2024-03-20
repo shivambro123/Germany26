@@ -7,35 +7,26 @@ import tesla from "./../../assests/Tesla_logo.svg";
 import bmw from "./../../assests/bmw1.svg";
 import oodd from "./../../assests/oodd.svg";
 import sap from "./../../assests/sap.svg";
-import btn_background from '../../assests/btn_background.svg';
+import btn_background from "../../assests/btn_background.svg";
 import lufthansa from "./../../assests/Lufthansa_Logo_2018.svg";
-import Tesla_logo from "../../assests/Hero/Tesla_logo.png"
-import oddd from "../../assests/Hero/oddd.png"
-import sap_png from "../../assests/Hero/sap.png"
-import Lufthansa_Logo_2018 from "../../assests/Hero/Lufthansa_Logo_2018.png"
 
-
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-        duration: 1800,
-        offset: 50
-    })
-})
+      duration: 1800,
+      offset: 50,
+    });
+  });
   return (
     <>
       <div className="herowrapper" id="first">
         <Container className="pt-12 pb-6">
-          <Row
-            className="px-3 md:px-4 h-full py-1 md:py-4"
-            data-aos="fade-up"
-          >
+          <Row className="px-3 md:px-4 h-full py-1 md:py-4">
             <Col lg={5} md={6} sm={12} className="hero_content">
-              <div className="drop-shadow-none md:drop-shadow-xl mb-4  ">
+              <div className="hero-left-content mb-4">
                 <p className="dreams">
                   Empowering dreams o
                   <span className="dream-f">f</span>
@@ -45,12 +36,11 @@ const Hero = () => {
                   Call for FREE counselling
                 </button>
               </div>
-              <div className="mb-2 flex items-center gap-2 md:flex-wrap  md:justify-normal md:mb-6">
+              <div className="mb-2 flex items-center justify-center gap-2 md:flex-wrap  md:justify-normal  md:mb-6">
                 <img src={studentsgroup} alt="studentsgroup" />
                 <p className="text-black guranteewrapper">
-                  {" "}
-                  <span className="percent"> 100% </span>
-                  guaranteed admission
+                  <span className="percent">100%</span> guaranteed
+                  admission
                 </p>
               </div>
               <div className="mt-2 md:mt-5">
@@ -67,7 +57,7 @@ const Hero = () => {
               lg={7}
               md={6}
               sm={12}
-              className="flex justify-center align-middle h-3/4 "
+              className="flex justify-center align-middle h-3/4"
             >
               <img
                 src={coverimage}
@@ -75,14 +65,14 @@ const Hero = () => {
                 className="coverimage"
               />
             </Col>
-            <div className="brandlogos flex flex-wrap mt-4 ">
-              <img src={Tesla_logo} alt="tesla" />
-              <img src={bmw} alt="bmw" />
-              <img src={oddd} alt="oodd" />
-              <img src={sap_png} alt="sap" />
-              <img src={Lufthansa_Logo_2018} alt="lufthansa" />
-            </div>
           </Row>
+          <div className="brandlogos flex flex-wrap">
+            <img src={tesla} alt="tesla" />
+            <img src={bmw} alt="bmw" />
+            <img src={oodd} alt="oodd" />
+            <img src={sap} alt="sap" />
+            <img src={lufthansa} alt="lufthansa" />
+          </div>
         </Container>
       </div>
     </>

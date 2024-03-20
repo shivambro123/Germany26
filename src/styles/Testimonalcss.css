@@ -14,14 +14,7 @@
   display: flex;
   flex-direction: column;
 }
-.studentspeak {
-  font-family: "ZonaPro-Regular";
-  width: 35%; /* Set width to 50% */
-  height: 50px; /* Adjust the height as needed */
-  margin-bottom: 3rem; /* Center the element horizontally */
-  border-bottom: 5px solid #ea7d06;
-  box-sizing: border-box;
-}
+
 .testi-feedback {
   font-size: 15px;
   line-height: 1rem;
@@ -38,24 +31,27 @@
   display: flex;
   justify-content: left;
   align-items: center;
+  cursor: pointer;
 }
 .firstvector {
   background-image: url("../assests/testimonal/Vector1.svg");
   background-repeat: no-repeat;
-  height: 5vh;
-  width: 50%;
+  background-size: contain;
+  height: 2vh;
+  width: 40%;
   position: absolute;
-  top: 10px;
-  left: 4px;
+  top: 20px;
+  left: 10px;
 }
 .secondvector {
   background-image: url("../assests/testimonal/Vector2.svg");
   background-repeat: no-repeat;
-  height: 5vh;
-  width: 50%;
+  background-size: contain;
+  height: 2vh;
+  width: 40%;
   position: absolute;
-  bottom: 84px;
-  right: 40px;
+  bottom: 140px;
+  right: 76px;
 }
 .namebtn {
   background-image: linear-gradient(to right, #ea7d06, #d63815);

@@ -32,9 +32,13 @@
 
 .active-scroll-spy {
   /* color: orange !important; */
-  text-shadow: 2px 2px 0.3px orange;
-  border-radius: 15px;
+  /* text-shadow: 2px 2px 0.3px orange; */
+  color:#ea7d06 !important;
+  /* border-radius: 15px; */
 }
+/* .active-scroll-spy html{
+   scroll-padding-top: 500px;
+} */
 
 @keyframes App-logo-spin {
   from {

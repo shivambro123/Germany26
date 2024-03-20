@@ -9,11 +9,16 @@ import "./../../styles/Testimonalcss.css";
 import anthonyreedy from "./../../assests/testimonal/testimonal_image.svg";
 import playbtn from "./../../assests/testimonal/play.svg";
 import university from "./../../assests/testimonal/University_of_Europe.png";
+import dummyVideo from "./../../assests/dummyvideo.mp4";
+import dummyVideo1 from "./../../assests/dummy1.mp4";
+import shwetacanva from "../../assests/new-testimonal/shwetacanva.png";
+
 import { FaPlayCircle } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PopUp from "../Modal/PopUp";
 
-function Success() {
+function Success({ handleWatchStory }) {
   const [sliderRef, setSliderRef] = useState(null);
 
   const sliderSettings = {
@@ -42,61 +47,45 @@ function Success() {
 
   const hotelCards = [
     {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      imageSrc: shwetacanva,
+      name: "Anthony Reddy",
+      para1:
+        "  My entire application process with Germanywale has been extremely smooth. Everyone in the team is exceptional and very helpful.",
+      para2: `     Germanywale to any student who is looking to
+                          go to Germany to make  
+                          their study-abroad
+                          dreams come true.`,
       pricingText: "USD 50/Day",
       features: ["Free Wifi", "Free breakfast"],
+      story: dummyVideo,
     },
     {
       imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      name: "Anthony Reddy",
+      para1:
+        "  My entire application process with Germanywale has been extremely smooth. Everyone in the team is exceptional and very helpful. I have zero complaints. I would recommend",
+      para2: `     Germanywale to any student who is looking to
+                          go to Germany to make  
+                          their study-abroad
+                          dreams come true.`,
       pricingText: "USD 50/Day",
       features: ["Free Wifi", "Free breakfast"],
+      story: dummyVideo1,
     },
     {
       imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
+      name: "Anthony Reddy",
+      para1:
+        "  My entire application process with Germanywale has been extremely smooth. Everyone in the team is exceptional and very helpful. I have zero complaints. I would recommend",
+      para2: `     Germanywale to any student who is looking to
+                          go to Germany to make  
+                          their study-abroad
+                          dreams come true.`,
       pricingText: "USD 50/Day",
       features: ["Free Wifi", "Free breakfast"],
+      story: dummyVideo,
     },
-    {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
-      pricingText: "USD 50/Day",
-      features: ["Free Wifi", "Free breakfast"],
-    },
-    {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
-      pricingText: "USD 50/Day",
-      features: ["Free Wifi", "Free breakfast"],
-    },
-    {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
-      pricingText: "USD 50/Day",
-      features: ["Free Wifi", "Free breakfast"],
-    },
-    {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
-      pricingText: "USD 50/Day",
-      features: ["Free Wifi", "Free breakfast"],
-    },
-    {
-      imageSrc: anthonyreedy,
-      title: "Studio Room",
-      description: "Lorem ipsum dolor sit amet, consectur dolori",
-      pricingText: "USD 50/Day",
-      features: ["Free Wifi", "Free breakfast"],
-    },
+    
   ];
 
   useEffect(() => {
@@ -105,6 +94,8 @@ function Success() {
       offset: 100,
     });
   });
+
+  const [watchStory, setWatchstory] = useState(false);
 
   return (
     <>
@@ -134,23 +125,16 @@ function Success() {
             <Slider ref={setSliderRef} {...sliderSettings}>
               {hotelCards.map((card, index) => (
                 <>
-                  <div className="testimonal">
+                  <div className="testimonal h-full">
                     <div className="relative text-left">
                       <div className="px-3 py-3 pb-2 leading-5">
                         <p className="testi-feedback text-left text-[#000000]">
-                          My entire application process with
-                          Germanywale has been extremely smooth.
-                          Everyone in the team is exceptional and very
-                          helpful. I have zero complaints. I would
-                          recommend
+                          {card.para1}
                         </p>
 
-                        <p className="testi-feedback text-left w-64 text-[#000000] mb-11">
-                          Germanywale to any student who is looking to
-                          go to Germany to make <br /> their
-                          study-abroad <br />
-                          dreams come true.
-                        </p>
+                        {/* <p className="testi-feedback text-left w-64 text-[#000000] mb-11 whitespace-pre-line">
+                          {card.para2}
+                        </p> */}
 
                         <p className="text-xs text-left text-[#000000] w-32">
                           Master of Business Administration
@@ -168,22 +152,28 @@ function Success() {
                       <div className="overlayImage">
                         <img
                           src={card.imageSrc}
-                          alt={card.title}
+                          alt={card.name}
                           className="h-full w-full object-fill z-0"
                         />
                       </div>
                       <div className="ml-28 z-50 absolute bottom-16">
                         {" "}
                         <button className="namebtn mt-3 z-50">
-                          Anthony Reddy
+                          {card.name}
                         </button>
                       </div>
                     </div>
 
-                    <div className="view text-lg">
-                      {/* <FaPlayCircle className="text-xl"/> */}
-                      <img src={playbtn} alt="playbtn" />
-                      &nbsp;Watch Story
+                    <div className="">
+                      <button
+                        className="view text-lg"
+                        onClick={() => handleWatchStory(card.story)}
+                      >
+                        {" "}
+                        {/* <FaPlayCircle className="text-xl"/> */}
+                        <img src={playbtn} alt="playbtn" />
+                        &nbsp;Watch Story
+                      </button>
                     </div>
                   </div>
                 </>
@@ -192,6 +182,7 @@ function Success() {
           </div>
         </Container>
       </section>
+      {/* {watchStory && <PopUp />} */}
     </>
   );
 }

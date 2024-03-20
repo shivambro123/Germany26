@@ -1,11 +1,11 @@
 .universitytitle{
-     width: 20%; /* Set width to 50% */
-  height: 50px; /* Adjust the height as needed */
-  margin-bottom: 3rem; /* Center the element horizontally */
-  border-bottom: 5px solid #ea7d06;
-  box-sizing: border-box; 
+  background:  linear-gradient(to right, #E56D09, #D63715);
+    -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+           font-size: 1.7rem;
+    font-family: "Zona";
+    background-clip: text;
+    color: transparent;
 }
-
 .marquee-container{
     display: flex;
     overflow: hidden;
@@ -28,15 +28,15 @@
 }
 .left-marquee .university_logos{
     width: 20%;
-    aspect-ratio: 7/2;
+    aspect-ratio: 7/2;  
     object-fit: contain;
-    mix-blend-mode: color-burn;
+    margin: auto;
 }
 .right-marquee .university_logos{
        width: 20%;
-    aspect-ratio: 16/2;
+    aspect-ratio: 7/2;
     object-fit: contain;
-    mix-blend-mode: color-burn;
+    margin: auto;
 }
 
 
