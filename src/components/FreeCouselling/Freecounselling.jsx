@@ -1,18 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./../../styles/Freecounsellingcss.css";
 import university from "./../../assests/studygermany/leftFirst.svg";
-import curriculum from "./../../assests/Freelance/curriculum.svg";
 import statement from "./../../assests/Freelance/statement.svg";
 import interview from "./../../assests/Freelance/interview.svg";
-import recommendation from "./../../assests/Freelance/recommendation.svg";
 import university_application from "./../../assests/Freelance/university_application.svg";
-import visa from "./../../assests/Freelance/visa.svg";
-import travel_assistant from "./../../assests/Freelance/travel_assistant.svg";
 import aero_plane from "./../../assests/aero_vector.svg";
 import progress_start from "./../../assests/Freelance/progress_start.svg";
-import purpose from "./../../assests/studygermany/purpose.png";
-import recommendate from "./../../assests/studygermany/recommendate.svg";
-import accomodate from "./../../assests/studygermany/accomodate.svg";
 
 // import title icon
 
@@ -27,6 +20,7 @@ import accomodateIcon from "../../assests/studygermany/accomodateIcon.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 const Freecounselling = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [visiblePlaneBottom, setvisiblePlaneBottom] = useState(false);
@@ -42,8 +36,8 @@ const Freecounselling = () => {
   }, [window.scrollY]);
   useEffect(() => {
     AOS.init({
-      duration: 1800,
-      offset: 50,
+      duration: 1200,
+      offset: 90,
     });
 
     console.log(componentheight, "componentheight");
@@ -132,7 +126,9 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">Free Counselling</h3>
+                  <h3 className="mb-2 md:mb-3 leading-10">
+                    Free Counselling
+                  </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
                     Our personalized session at NO COST{" "}
                   </p>
@@ -162,7 +158,7 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">
+                  <h3 className="mb-2 md:mb-3 leading-10">
                     University Shortlisting
                   </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
@@ -223,7 +219,7 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">
+                  <h3 className="mb-2 md:mb-3 leading-10">
                     Statement of purpose
                   </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
@@ -255,7 +251,9 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">Curriculum Vitae</h3>
+                  <h3 className="mb-2 md:mb-3 leading-10">
+                    Curriculum Vitae
+                  </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
                     Full Assistance
                   </p>
@@ -313,7 +311,7 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">
+                  <h3 className="mb-2 md:mb-3 leading-10">
                     Letter of recommendation
                   </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
@@ -346,7 +344,7 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">
+                  <h3 className="mb-2 md:mb-3 leading-10">
                     University Application
                   </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
@@ -406,7 +404,9 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">Visa Assistance</h3>
+                  <h3 className="mb-2 md:mb-3 leading-10">
+                    Visa Assistance
+                  </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
                     Visa to enter Germany
                   </p>
@@ -436,7 +436,7 @@ const Freecounselling = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="mb-2 md:mb-3">
+                  <h3 className="mb-2 md:mb-3 leading-10">
                     Accomodation and travel assistance
                   </h3>
                   <p className="mb-2 md:mb-3 applicartion_title">
@@ -491,30 +491,14 @@ const Freecounselling = () => {
                 <img
                   src={aero_plane}
                   alt="aero_plane"
-                  style={{
-                    height: "50px",
-                    width: "80px",
-                    position: "absolute",
-                    left: "47.5%",
-                    // top: "-2160px", // Adjust as needed
-                    visibility:
-                      window.scrollY < 2160 ? "hidden" : "visible",
-                    top: "-2160px",
-                  }}
+                  className="topPlane"
                 />
               )}
               {visiblePlaneBottom && (
                 <img
                   src={aero_plane}
                   alt="aero_plane"
-                  style={{
-                    height: "50px",
-                    width: "80px",
-                    position: "absolute",
-                    visibility:
-                      window.scrollY < 130 ? "hidden" : "visible",
-                    left: "47.5%",
-                  }}
+                  className="bottomPlane"
                 />
               )}
             </div>
@@ -522,15 +506,7 @@ const Freecounselling = () => {
         </div>
       </div>
       {isVisible && (
-        <div
-          style={{
-            position: "fixed",
-            left: "50.2%",
-            top: "120px",
-            transform: "translateX(-50%)",
-            zIndex: 9999,
-          }}
-        >
+        <div className="fixedAero_plane">
           <img
             src={aero_plane}
             alt="aero_plane"

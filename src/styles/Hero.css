@@ -1,19 +1,18 @@
 .herowrapper {
-  background-image: url("./../assests/herobg.png");
-  background-position: right;
+  background-image: url("./../assests/Hero/herobackground.png");
   background-size: cover;
   width: 100%;
 }
 
 .hero_content {
   text-align: left;
-font-family: "ZonaPro-Bold";
+  font-family: "Gilroy-ExtraBold";
   font-size: 40px;
   padding: 2rem 0;
   padding-left: 1rem;
 }
 
-.hero-left-content{
+.hero-left-content {
   text-align: left;
 }
 
@@ -22,10 +21,8 @@ font-family: "ZonaPro-Bold";
   font-size: 40px;
 }
 
-
-
 .dreams .dream-f {
-  font-family: "ZonaPro-Regular";
+  font-family: "Gilroy-ExtraBold";
   font-weight: bolder;
 }
 
@@ -46,14 +43,15 @@ font-family: "ZonaPro-Bold";
   border-radius: 10px;
   font-style: normal;
   font-weight: 100 !important;
-  font-family: "ZonaPro-Regular";
+  font-family: "Gilroy-Regular";
 }
 
 .guranteewrapper {
   font-size: 22px;
+  font-family: "Gilroy-ExtraBold";
 }
 .our-student {
-  font-family: "ZonaPro-Regular";
+  font-family: "Gilroy-Regular";
   text-align: left;
 }
 
@@ -80,9 +78,9 @@ font-family: "ZonaPro-Bold";
   .hero_content {
     padding: 0;
   }
-  .hero-left-content{
-  text-align: center;
-}
+  .hero-left-content {
+    text-align: center;
+  }
   .hero_content .dreams {
     font-size: 1.75rem;
   }
@@ -104,10 +102,10 @@ font-family: "ZonaPro-Bold";
     margin: 0;
     padding: 0;
   }
-  .our-student{
+  .our-student {
     text-align: center;
   }
-  .brandlogos{
+  .brandlogos {
     margin-top: 1rem;
   }
   .brandlogos img {

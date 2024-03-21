@@ -13,7 +13,7 @@ const OurPartners = () => {
       <section className="partnerWrapper custom-padding-x">
         <div className="text-left px-10">
           <div>
-            <h4 className="mb-2 text__32 font-semibold custom-padding ">
+            <h4 className="mb-2 text__32 font-semibold custom-padding partnerHeading">
               Our Partners
             </h4>
             <p className="text__14 custom-width">

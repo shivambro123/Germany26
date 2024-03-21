@@ -2,7 +2,7 @@
    background:  linear-gradient(to right, #E56D09, #D63715);
     -webkit-background-clip: text; /* For Safari/Chrome/iOS */
            font-size: 1.7rem;
-    font-family: "Zona";
+    font-family: "Gilroy-ExtraBold";
     background-clip: text;
     color: transparent;
 }
@@ -53,7 +53,7 @@
 }
 
 .storytitle {
-  font-family: "ZonaPro-Regular", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {

@@ -7,7 +7,7 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-    font-family: 'ZonaPro';
+    font-family: 'Gilroy-Regular';
   /* -webkit-font-smoothing: antialiased; */
   /* -moz-osx-font-smoothing: grayscale; */
 }
@@ -19,7 +19,7 @@ code {
 
 @font-face {
   font-family: 'ZonaPro-Black';
-  src: url('./assests//fonts/ZonaPro-Black.otf');
+  src: url('./assests//fonts/ZonaPro-Black.otf'); 
   font-style: normal;
 }
 @font-face {
@@ -40,4 +40,24 @@ code {
 @font-face {
   font-family: 'ZonaPro-Regular';
   src: url('./assests//fonts/ZonaPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assests//fonts/gilroy/Gilroy-Black.eot');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('./assests//fonts/gilroy/Gilroy-ExtraBold.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('./assests//fonts/gilroy/Gilroy-ExtraBold.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('./assests//fonts/gilroy/Gilroy-Regular.woff');
 }

@@ -6,7 +6,7 @@ const Sync = () => {
   return (
     <section>
       <div className="py-4">
-        <h3 className="mb-3 headTitle">
+        <h3 className="mb-3 headTitlesync">
           SYNC ALL DOCUMENTS IN THE CLOUD
         </h3>
         <p className="text-center text__20 mb-3">

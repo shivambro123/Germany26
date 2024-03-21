@@ -1,9 +1,9 @@
-.headTitle {
+.headTitlesync {
   background: linear-gradient(to right, #e56d09, #d63715);
   -webkit-background-clip: text; /* For Safari/Chrome/iOS */
   font-size: 2rem;
   font-weight:900;
-  font-family: "Zona";
+  font-family: "Gilroy-ExtraBold";
   background-clip: text;
   color: transparent;
 }

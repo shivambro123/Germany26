@@ -1,57 +1,53 @@
-.universitytitle{
-  background:  linear-gradient(to right, #E56D09, #D63715);
-    -webkit-background-clip: text; /* For Safari/Chrome/iOS */
-           font-size: 1.7rem;
-    font-family: "Zona";
-    background-clip: text;
-    color: transparent;
+.universitytitle {
+  background: linear-gradient(to right, #e56d09, #d63715);
+  -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+  font-size: 1.7rem;
+  font-family: "Gilroy-ExtraBold";
+  background-clip: text;
+  color: transparent;
 }
-.marquee-container{
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-
-    
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
 }
-.left-marquee{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    font-size: 90px;
-    /* animation: leftAnimation 10s linear infinite; */
+.left-marquee {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 90px;
+  /* animation: leftAnimation 10s linear infinite; */
 }
-.right-marquee{
-        display: flex;
-    align-items: center;
-    width: 100%;
-    font-size: 90px;
+.right-marquee {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 90px;
 }
-.left-marquee .university_logos{
-    width: 20%;
-    aspect-ratio: 7/2;  
-    object-fit: contain;
-    margin: auto;
+.left-marquee .university_logos {
+  width: 20%;
+  aspect-ratio: 7/2;
+  object-fit: contain;
+  margin: auto;
 }
-.right-marquee .university_logos{
-       width: 20%;
-    aspect-ratio: 7/2;
-    object-fit: contain;
-    margin: auto;
+.right-marquee .university_logos {
+  width: 20%;
+  aspect-ratio: 7/2;
+  object-fit: contain;
+  margin: auto;
 }
 
-
-@keyframes leftAnimation{
-    from {
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(-100%);
-
-    }
+@keyframes leftAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-@media screen and (min-width:320px) and (max-width:480px){
-      .universitytitle{
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .universitytitle {
     width: 100%;
     height: max-content;
     font-size: 24px;

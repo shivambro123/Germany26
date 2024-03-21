@@ -5,8 +5,8 @@ import HeroImage from "../../assests/Herosvg.svg";
 const Transparency = () => {
   return (
     <section>
-      <div className="py-4">
-        <h3 className="mb-3 headTitle">
+      <div className="transparencyWrapper">
+        <h3 className="mb-3 headTitle1">
           WE BELEIVE IN 100% TRANSPARENCY
         </h3>
         <p className="text-center text__20 mb-3">

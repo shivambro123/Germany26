@@ -4,13 +4,19 @@
   background-size: cover;
   padding: 2rem 10rem;
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.partnerHeading {
+  font-family: "Gilroy-ExtraBold";
+  letter-spacing: 0.5px;
 }
 
 .partnerlogo {
   display: flex; /* Use flexbox */
   justify-content: flex-start; /* Align items to the start (left) */
-  gap: 10px; /* Add some spacing between images */
+
+  /* gap: 10px; Add some spacing between images */
 }
 
 .partnerlogo img {
@@ -19,10 +25,8 @@
   object-fit: contain;
 }
 .partnerlogo img:first-child {
-    width: 150px; 
-
+  width: 150px;
 }
-
 
 .custom-width {
   @apply w-2/5;
@@ -31,4 +35,25 @@
 
 .custom-padding {
   @apply py-8;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .partnerWrapper {
+    padding: 1rem;
+  }
+  .custom-width {
+    @apply w-full;
+  }
+
+  .partnerlogo {
+    flex-wrap: wrap;
+  }
+  .partnerlogo img {
+    aspect-ratio: 5/2;
+    margin: auto;
+  }
+
+  .partnerlogo img:first-child {
+    width: 90px;
+  }
 }

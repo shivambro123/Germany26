@@ -69,11 +69,11 @@ const University = () => {
                 alt="university"
                 className="university_logos"
               />
-              <img
+              {/* <img
                 src={rwth}
                 alt="university"
                 className="university_logos"
-              />
+              /> */}
               <img
                 src={universistant}
                 alt="university"
